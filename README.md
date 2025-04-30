@@ -13,7 +13,7 @@ This extension adds LaTeX rendering to phpBB using MathJax, supporting both inli
 
 ## Installation
 1. Download the latest release from GitHub.
-2. Extract the `bigbadaboom/latexrenderer` folder to `[ROOT]/ext/`.
+2. Extract (or create if downloading the code..) the `bigbadaboom/latexrenderer` folder to `[ROOT]/ext/`.
 3. Go to the Admin Control Panel > **Customize** > **Extension Management** > **Enable** `LaTeX Renderer`.
 4. Clear the forum cache (ACP > **General** > **Purge Cache**).
 
