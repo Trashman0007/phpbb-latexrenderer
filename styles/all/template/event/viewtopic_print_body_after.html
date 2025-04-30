@@ -1,0 +1,12 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.startup.promise.then(() => {
+        console.log('MathJax startup complete in print view, typesetting...');
+        MathJax.typeset();
+      }).catch(err => console.error('MathJax startup failed in print view:', err));
+    } else {
+      console.log('MathJax not loaded in print view');
+    }
+  });
+</script>

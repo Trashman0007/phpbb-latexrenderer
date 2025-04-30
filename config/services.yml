@@ -1,0 +1,8 @@
+services:
+    acme.latexrenderer.listener:
+        class: bigbadaboom\latexrenderer\event\main_listener
+        arguments:
+            - '@dbal.conn'
+            - '@template'
+        tags:
+            - { name: event.listener }

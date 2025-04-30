@@ -1,0 +1,15 @@
+<script>
+  function typesetMathJax() {
+    if (typeof MathJax !== 'undefined' && typeof MathJax.typeset === 'function') {
+      console.log('MathJax loaded, typesetting...');
+      MathJax.typeset();
+    } else {
+      console.log('MathJax not fully loaded, retrying...');
+      setTimeout(typesetMathJax, 500); // Retry after 500ms
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    typesetMathJax();
+  });
+</script>

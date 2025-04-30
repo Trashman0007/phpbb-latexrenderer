@@ -1,0 +1,26 @@
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    chtml: {
+      scale: 1
+    },
+    startup: {
+      ready: function () {
+        console.log('MathJax is fully loaded and ready in print view');
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+<style type="text/css" media="print">
+  .mathjax {
+    font-size: 1.1em !important; /* Adjust font size for print */
+  }
+  body {
+    margin: 1in !important; /* Add margins for printed pages */
+  }
+</style>

@@ -1,0 +1,26 @@
+{
+    "name": "bigbadaboom/latexrenderer",
+    "type": "phpbb-extension",
+    "description": "Adds LaTeX rendering to phpBB3 using MathJax tex-chtml.js",
+    "homepage": "https://github.com/Trashman0007/phpbb-latexrenderer",
+    "version": "1.0.0",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "David",
+            "email": "david@bigbadaboom.ca",
+            "homepage": "https://forum.bigbadaboom.ca/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "LaTeX Renderer",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0"
+        }
+    }
+}
